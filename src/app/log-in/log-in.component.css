@@ -1,0 +1,50 @@
+
+mat-card{
+  background-image: linear-gradient(to top, #a18cd1 0%, rgba(251, 194, 235, 0.2) 100%);
+}
+:host {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px;
+}
+
+.mat-form-field {
+  width: 100%;
+  min-width: 400px;
+}
+
+mat-card-title,
+mat-card-content {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  padding: 16px;
+  width: 300px;
+  color: white;
+  background-color: red;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+h1 {
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 280%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+h1:after {
+  display: block;
+  height: 2px;
+  background-color: #2b00e2;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}

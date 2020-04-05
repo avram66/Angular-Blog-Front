@@ -1,0 +1,136 @@
+.companyName{
+  font-size: 150%;
+}
+.logo{
+  width:80px;
+  height: 40px;
+  background-color:#ffffff;
+}
+header {
+
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/images/Image_social.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+
+}
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+/*  -------------Buttons Log In Register ---------------------*/
+.btn:link,
+.btn:visited
+{
+  display: inline-block;
+  padding: 18px 20px;
+  font-weight: 300px;
+  text-decoration: none;
+  border-radius: 2px;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited
+ {
+  background-color:#44bd32;
+  border: 1px solid #44bd32;
+  color: #fff;
+  margin-right: 35px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #2b00e2;
+  color: #3498db;
+  background-color: #2b00e2;
+  color: #fff;
+}
+
+/*.btn:hover,*/
+/*.btn:active*/
+/* {*/
+/*  background-color: #2b00e2;*/
+/*}*/
+
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #8395a7;
+  background: #434343;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #8395a7;
+  background: #434343;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
+h1 {
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 280%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.mat-toolbar{
+  height: 7vh;
+}
+
+div {
+  overflow: inherit;
+}
+
+.mat-sidenav-container{
+
+  min-height: 93vh !important;
+}
+
+a{
+  text-decoration: none;
+  font-size: 110%;
+  white-space: normal;
+}
+
+button{
+  font-size: 110%;
+  min-width: min-content;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-sidenav-content{
+  font-size: 200%;
+  text-align: center;
+}

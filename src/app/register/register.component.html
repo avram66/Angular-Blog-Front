@@ -1,0 +1,45 @@
+
+<mat-card>
+  <mat-card-title>Register</mat-card-title>
+  <mat-card-content >
+    <form>
+      <p>
+        <mat-form-field>
+          <input type="text" autocomplete="off"   matInput placeholder="Name" >
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <input  autocomplete="off"  matInput placeholder="Last Name">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <input placeholder="Date of Birth" matInput [matDatepicker]="myDatepicker">
+          <mat-datepicker-toggle matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
+          <mat-datepicker #myDatepicker></mat-datepicker>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <input type="password" autocomplete="off"  matInput placeholder="Password">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <input type="password" autocomplete="off"  matInput placeholder="Confirm Password">
+        </mat-form-field>
+      </p>
+
+      <!--      <p *ngIf="error" class="error">-->
+      <!--        {{ error }}-->
+      <!--      </p>-->
+
+      <div class="button">
+        <button type="submit" mat-raised-button color="primary">Login</button>
+      </div>
+
+    </form>
+  </mat-card-content>
+</mat-card>
+
