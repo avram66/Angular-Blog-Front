@@ -21,16 +21,37 @@ import { MatCardModule} from '@angular/material/card';
 import { RegisterComponent } from './register/register.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
+import {DialogUploadImage, MyProfileComponent} from './my-profile/my-profile.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { BlogPageComponent } from './blog-page/blog-page.component';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatDialogModule} from '@angular/material/dialog';
+import {NgxPaginationModule} from 'ngx-pagination';
+import {HomeComponent} from './home-component/home-component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import {CommonModule} from '@angular/common';
+import {ImageCropperModule} from 'ngx-image-cropper';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyNavbarComponent,
+   MyNavbarComponent,
     LogInComponent,
-    RegisterComponent
+    RegisterComponent,
+    MyProfileComponent,
+    BlogPageComponent,
+    HomeComponent,
+    AboutUsComponent,
+    DialogUploadImage
   ],
+
   imports: [
+    CommonModule,
+    BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
+    NgxPaginationModule,
     BrowserAnimationsModule,
     MatSliderModule,
     MatMenuModule,
@@ -42,13 +63,20 @@ import {MatNativeDateModule} from '@angular/material/core';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatDialogModule,
     MatGridListModule,
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatExpansionModule,
+    MatCheckboxModule,
+    ImageCropperModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
+  entryComponents: [DialogUploadImage],
   providers: [],
   bootstrap: [AppComponent]
 })

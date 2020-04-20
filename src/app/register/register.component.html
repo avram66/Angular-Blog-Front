@@ -2,32 +2,38 @@
 <mat-card>
   <mat-card-title>Register</mat-card-title>
   <mat-card-content >
-    <form>
+    <form *ngIf="RegisterFormGroup"  [formGroup]="RegisterFormGroup">
+
       <p>
         <mat-form-field>
-          <input type="text" autocomplete="off"   matInput placeholder="Name" >
+          <input type="text" autocomplete="off"   matInput placeholder="Name" formControlName="firstname">
         </mat-form-field>
       </p>
       <p>
         <mat-form-field>
-          <input  autocomplete="off"  matInput placeholder="Last Name">
+          <input  autocomplete="off"  matInput placeholder="Last Name" formControlName="lastname">
         </mat-form-field>
       </p>
       <p>
         <mat-form-field>
-          <input placeholder="Date of Birth" matInput [matDatepicker]="myDatepicker">
+          <input  autocomplete="off"  matInput placeholder="Username" formControlName="username">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <input placeholder="Date of Birth" matInput [matDatepicker]="myDatepicker" formControlName="dateOfBirth">
           <mat-datepicker-toggle matSuffix [for]="myDatepicker"></mat-datepicker-toggle>
           <mat-datepicker #myDatepicker></mat-datepicker>
         </mat-form-field>
       </p>
       <p>
         <mat-form-field>
-          <input type="password" autocomplete="off"  matInput placeholder="Password">
+          <input type="password" autocomplete="off"  matInput placeholder="Password" formControlName="password">
         </mat-form-field>
       </p>
       <p>
         <mat-form-field>
-          <input type="password" autocomplete="off"  matInput placeholder="Confirm Password">
+          <input type="password" autocomplete="off"  matInput placeholder="Confirm Password" formControlName="confirmPassword">
         </mat-form-field>
       </p>
 
@@ -36,7 +42,7 @@
       <!--      </p>-->
 
       <div class="button">
-        <button type="submit" mat-raised-button color="primary">Login</button>
+        <button type="submit" [disabled]="!RegisterFormGroup.valid" mat-raised-button color="primary">Register</button>
       </div>
 
     </form>

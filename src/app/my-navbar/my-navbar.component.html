@@ -1,45 +1,47 @@
-<div>
-  <mat-toolbar color="primary">
+<mat-toolbar color="primary">
     <div fxShow="true" fxHide.gt-sm="true">
       <button mat-icon-button (click)="sidenav.toggle()">
-        <mat-icon>menu</mat-icon>
+        <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
       </button>
     </div>
-
-    <a mat-button class="companyName" routerLink="/">
-      <span><img  class="logo"  src="../../assets/images/cover.png"></span>
-    </a>
-    <span class="example-spacer"></span>
+  <span  class="companyName"> <img  width="40px" height="40px" class="times"  routerLink=""  src="../../assets/images/profile.png"></span>
+   <span class="example-spacer"></span>
     <div fxShow="true" fxHide.lt-md="true">
-      <a mat-button routerLink="/about-us">About us</a>
-      <a mat-button routerLink="/prices">Blog</a>
-      <a mat-button routerLink="/start-page">My profile</a>
-      <a mat-button routerLink="/offer">Log In</a>
-      <a mat-button routerLink="/contact">Contact</a>
+      <a mat-button routerLink="blog">Blog</a>
+      <a mat-button routerLink="/log-in">Log In</a>
+      <a mat-button routerLink="about-us">About us</a>
+      <a mat-button routerLink="/my-profile"><span class="material-icons">account_circle</span></a>
     </div>
 
   </mat-toolbar>
-  <mat-sidenav-container fxFlexFill class="example-container">
 
-    <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true">
-      <div fxLayout="column">
-        <a mat-button routerLink="/about-us">About us</a>
-        <a mat-button routerLink="/prices">Blog</a>
-        <a mat-button routerLink="/start-page">My profile</a>
-        <a mat-button routerLink="/offer">Log In</a>
-        <a mat-button routerLink="/contact">Contact</a>
-      </div>
-    </mat-sidenav>
-    <mat-sidenav-content fxFlexFill>
-      <header>
+<mat-sidenav  color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true">
+  <mat-sidenav-container   fxFlexFill class="example-container">
+  <div fxLayout="column">
+    <a mat-button class="ml-2" style="font-size:15px;" (click)="sidenav.toggle()">
+      <img class="times"  src="../../assets/images/times.svg">
+    </a>
+    <a mat-button routerLink="blog">Blog</a>
+    <a mat-button routerLink="/log-in">Log In</a>
+    <a mat-button routerLink="about-us">About us</a>
+    <a mat-button routerLink="/my-profile"><span class="material-icons">account_circle</span></a>
 
-    <div class="hero-text-box">
-          <h1>We need your opinion?</h1>
-          <a  class="btn btn-full  srpski" routerLink="/log-in">Log in</a>
-          <a class="btn btn-ghost  ruski"  routerLink="/register" href="#">Register</a>
-        </div>
- </header>
-    </mat-sidenav-content>
-
+  </div>
   </mat-sidenav-container>
-</div>
+</mat-sidenav>
+<!-- <mat-sidenav-container   fxFlexFill class="example-container">-->
+<!--   <mat-sidenav-content fxFlexFill>-->
+<!--&lt;!&ndash;      <header>&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="hero-text-box">&ndash;&gt;-->
+<!--&lt;!&ndash;          <h1>We need your opinion?</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;          <a  class="btn btn-full  srpski" routerLink="/log-in">Log in</a>&ndash;&gt;-->
+<!--&lt;!&ndash;          <a class="btn btn-ghost  ruski"  routerLink="/register" href="#">Register</a>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash; </header>&ndash;&gt;-->
+
+<!--     <router-outlet></router-outlet>-->
+
+<!--    </mat-sidenav-content>-->
+
+<!--  </mat-sidenav-container>-->
+

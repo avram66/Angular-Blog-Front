@@ -2,7 +2,7 @@
 <mat-card>
   <mat-card-title>Login</mat-card-title>
   <mat-card-content >
-    <form>
+    <form *ngIf="LogInFormGroup" [formGroup]="LogInFormGroup">
       <p>
         <mat-form-field>
           <input type="text" autocomplete="off"   matInput placeholder="Username" formControlName="username">
@@ -19,7 +19,7 @@
 <!--      </p>-->
 
       <div class="button">
-        <button type="submit" mat-raised-button color="primary">Login</button>
+        <button type="submit"  [disabled]="!LogInFormGroup.valid" mat-raised-button color="primary">Login</button>
       </div>
 
     </form>

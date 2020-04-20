@@ -5,7 +5,9 @@ html, body, app-root {
   height: 100%;
 
 }
-
+.my-profile{
+ background-color: #434343;
+}
 .bg-img
 {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('/assets/images/author-blog-create-creative-267569.jpg');
@@ -13,6 +15,10 @@ html, body, app-root {
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
+
+}
+.blog-background{
+  background: linear-gradient(#fdfbfb, #ebedee);
 
 }
 
