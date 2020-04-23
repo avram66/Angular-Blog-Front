@@ -1,0 +1,123 @@
+.Rectangle{
+  border-radius: 8px;
+
+  /*width: 907px;*/
+  height: 96px;
+  /*margin: 270px 266px 201px 267px;*/
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.18);
+  background-color: #ffffff;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+
+}
+
+.s {
+position: absolute;
+  float:left;
+  width: 32px;
+  height: 32px;
+  margin: 28px 3px 12px 32px;
+}
+.times{
+  position: absolute;
+  float:left;
+  margin-top:40.5px;
+  margin-bottom:40.5px;
+  margin-right: 32px;
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+input:focus {
+  font-family: Roboto;
+  float:left;
+  font-size: 24px;
+  width:784px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgb(51, 53, 57);
+}
+.Search{
+  outline: none;
+  position: absolute;
+  height:28px;
+  font-family: Roboto;
+  margin-top: 34px;
+  margin-bottom: 34px;
+  margin-left:102px;
+  border:none;
+  font-size: 24px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+textarea{
+  resize: none;
+  border:none;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: rgba(67, 67, 67, 0.29);
+  word-spacing: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+h1 {
+  color: #363636;
+  font-family: 'Raleway',
+  sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 36px;
+  font-weight: 500;
+  font-size: 280%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+.heading{
+  margin-top:50px;
+}
+h1:after {
+  display: block;
+  height: 2px;
+ margin-top: 10px;
+  background-color: #2b00e2;
+  content: " ";
+  width: 120px;
+}
+@media only screen and (max-width: 500px) {
+  input:focus{
+    width:224px;
+}
+  .Search{
+    width: 220px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  input:focus{
+    width:144px;
+  }
+  .Search{
+    width: 140px;
+  }
+}
+@media only screen and (min-device-width: 501px) and (max-device-width: 1024px) {
+  input:focus{
+    width:424px;
+  }
+  .Search{
+    width: 420px;
+  }
+}

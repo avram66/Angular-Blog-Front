@@ -1,0 +1,85 @@
+.background-picture{
+  background-image:-webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/images/timeline-photo.jpg) ;
+  background-size: 100vw 100vh;
+  background-size: cover;
+  border-radius: 11px;
+  height:480px;
+  margin-top: 20px;
+}
+a:hover {
+  color: rgba(185, 185, 185, 0.36);
+}
+.s {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  padding: 32px 38px 32px 32px;
+}
+.times{
+ margin-left:860px;
+  margin-top:40.5px;
+  margin-bottom:40.5px;
+  margin-right: 32px;
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+h1 {
+  font-weight: 500;
+  font-size: 280%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+h1:after {
+  display: block;
+  height: 2px;
+  background-color: #2b00e2;
+  content: " ";
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+textarea{
+  resize: none;
+  border:none;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: rgba(67, 67, 67, 0.29);
+  word-spacing: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+.example-card{
+ /*max-width:800px;*/
+}
+.edit-timeline{
+  position: absolute;
+  margin-left:690px;
+  margin-top: 150px;
+ color:#ffffff ;
+}
+.profile-picture{
+  cursor: pointer;
+  margin-top: 100px;
+  border: 10px solid #ffffff;
+  border-radius: 25px;
+  z-index: 2;
+background-image: url(../../assets/images/0.jpg);
+width: 200px;
+height: 200px;
+/*margin-right:700px;*/
+}
+.profile-picture-edit{
+  cursor:pointer;
+  margin-top:150px;
+  margin-left:160px;
+  color:#ffffff ;
+}
+.profile-picture:hover,
+.profile-picture:active {
+  opacity: 1;
+  z-index: 11;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.7)), url(../../assets/images/0.jpg);
+}
